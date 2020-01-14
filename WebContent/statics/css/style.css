@@ -1,0 +1,262 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "microsoft yahei";
+	box-sizing: border-box;
+	font-weight: normal;
+}
+
+a {
+	text-decoration: none;
+	color: #999;
+}
+
+ul {
+	list-style: none;
+}
+
+img {
+	border: none;
+}
+
+.bg-grey {
+	background-color: #f2f2f4;
+	width: 100%;
+	height: auto;
+	padding: 76px 0;
+}
+
+.content {
+	width: 1200px;
+	margin: 0 auto;
+	height: auto;
+}
+
+h2.title {
+	text-align: center;
+	font-size: 24px;
+	color: #333;
+	line-height: 24px;
+	padding-bottom: 24px;
+	position: relative;
+}
+
+h2.title:after {
+	position: absolute;
+	left: 50%;
+	width: 46px;
+	height: 1px;
+	margin-left: -23px;
+	background-color: #0c9;
+	bottom: 0;
+	content: '';
+}
+
+p.subtitle {
+	margin-top: 18px;
+	text-align: center;
+	font-size: 16px;
+	color: #666;
+	line-height: 30px;
+}
+
+.tab-block {
+	width: 1200px;
+	height: 580px;
+	margin: 50px auto 0;
+	background-color: #FFF;
+	border: 1px solid #e5e5e5
+}
+
+.tab-block.information-tab {
+	height: 430px
+}
+
+.tab-block.information-tab .tabs {
+	height: 380px
+}
+
+.tab-block .tab-buttons {
+	width: 100%;
+	height: 50px;
+	background-color: #fafafa
+}
+
+.tab-block .tab-buttons .tab-button {
+	width: 33.33%;
+	float: left;
+	height: 50px;
+	text-align: center;
+	font-size: 16px;
+	color: #999;
+	line-height: 50px;
+	position: relative;
+	cursor: pointer
+}
+
+.tab-block .tab-buttons .tab-button.cur {
+	background-color: #fff;
+	color: #333
+}
+
+.tab-block .tab-buttons .tab-button.cur:after {
+	content: '';
+	position: absolute;
+	top: -1px;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background-color: #1183ff
+}
+
+.tab-block .tabs {
+	width: 100%;
+	height: 528px
+}
+
+.tab-block .tabs .tab-item {
+	width: 100%;
+	height: 100%;
+	padding: 20px;
+	display: none
+}
+
+.tab-block .tabs .tab-item.active {
+	display: block
+}
+
+.information-tab .information-left {
+	width: 500px;
+	height: 340px;
+	overflow: hidden;
+	position: relative;
+	float: left;
+}
+
+.information-tab .information-left img {
+	width: 100%;
+	height: auto
+}
+
+.information-tab .information-left .left-bottom {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 48px;
+	line-height: 48px;
+	background-color: rgba(0, 0, 0, .5);
+	z-index: 2;
+	color: #fff;
+	padding: 0 14px
+}
+
+.information-tab .information-left .left-bottom .article-title {
+	font-size: 18px;
+	width: 400px;
+	float: left;
+}
+
+.information-tab .information-left .left-bottom .article-time {
+	font-size: 14px;
+	float: right;
+}
+
+.information-tab .information-right {
+	width: 640px;
+	height: 340px;
+	float: right;
+}
+
+.information-tab .information-right .article-list {
+	padding-top: 20px
+}
+
+.information-tab .information-right .article-list .article-link {
+	display: block;
+	padding: 0 20px
+}
+
+.information-tab .information-right .article-list .article-link .article-head span {
+	display: inline-block;
+	vertical-align: middle
+}
+
+.information-tab .information-right .article-list .article-number {
+	width: 20px;
+	height: 20px;
+	text-align: center;
+	line-height: 20px;
+	color: #fff;
+	background-color: #999;
+	font-size: 14px
+}
+
+.information-tab .information-right .article-list .article-title {
+	font-size: 16px;
+	color: #333;
+	line-height: 20px;
+	margin-left: 14px;
+	width: 450px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap
+}
+
+.information-tab .information-right .article-list .article-time {
+	float: right;
+	font-size: 12px;
+	color: #999;
+	line-height: 20px
+}
+
+.information-tab .information-right .article-list .article-content {
+	margin-top: 10px;
+	padding-left: 44px;
+	width: 450px;
+	font-size: 14px;
+	color: #666;
+	line-height: 26px;
+	display: none
+}
+
+.information-tab .information-right .article-list .article-content p {
+	height: 52px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+}
+
+.information-tab .information-right .article-list:nth-of-type(1) .article-number,
+.information-tab .information-right .article-list:nth-of-type(2) .article-number,
+.information-tab .information-right .article-list:nth-of-type(3) .article-number {
+	background-color: #333
+}
+
+.information-tab .information-right .article-list.current .article-link {
+	background-color: #fafafc;
+	padding: 20px
+}
+
+.information-tab .information-right .article-list.current .article-number {
+	background-color: #0c9!important
+}
+
+.information-tab .information-right .article-list.current .article-title {
+	color: #0c9
+}
+
+.information-tab .information-right .article-list.current .article-content {
+	display: block
+}
+
+.question-icon {
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	vertical-align: middle;
+	background: url(../images/question-icon.png) center no-repeat;
+	-ms-background-size: 16px 16px;
+	background-size: 16px 16px;
+}
